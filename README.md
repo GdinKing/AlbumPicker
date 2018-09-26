@@ -15,7 +15,7 @@
 
 ### 示例图
 <div>
-<img src="/guide/picker.jpg" width="180" height="320" style="float:left"/>     <img src="/guide/preview.jpg" width="180" height="320"/>
+<img src="/guide/picker.jpg" width="250" height="445" style="float:left"/>     <img src="/guide/preview.jpg" width="250" height="445"/>
 </div>
 
 ### 用法
