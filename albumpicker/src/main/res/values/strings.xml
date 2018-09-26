@@ -1,0 +1,15 @@
+<resources>
+    <!-- album -->
+    <string name="preview">预览</string>
+    <string name="image_video">图片和视频</string>
+    <string name="last_image">最近图片</string>
+    <string name="videos">视频</string>
+    <string name="all_video">所有视频</string>
+    <string name="picker_image_count">%1$d张</string>
+    <string name="btn_text_ok">确定</string>
+    <string name="btn_text_ok_count">确定(%1$d/%2$d)</string>
+    <string name="preview_count">预览(%d)</string>
+    <string name="select_max_sum">最多只能选择%1$d张图片或视频</string>
+    <string name="select_max_video">最多只能选择%1$d个视频</string>
+    <string name="select_max_image">最多只能选择%1$d张图片</string>
+</resources>

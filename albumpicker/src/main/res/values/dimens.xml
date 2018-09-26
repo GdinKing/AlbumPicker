@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- album -->
+    <dimen name="album_shutter_size">60dp</dimen>
+    <dimen name="album_op_icon_size">40dp</dimen>
+    <dimen name="album_actionbar_height">46dp</dimen>
+    <dimen name="album_toolbar_height">48dp</dimen>
+    <dimen name="album_gallery_image_size">50dp</dimen>
+    <dimen name="album_directory_item_height">92dp</dimen>
+
+</resources>

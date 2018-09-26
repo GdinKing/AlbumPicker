@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="album_green">#19bf03</color>
+    <color name="album_gray">#7c7c7c</color>
+    <color name="album_light_gray">#b1b1b1</color>
+
+    <color name="album_toolbar_color">#f0393a3f</color>
+</resources>

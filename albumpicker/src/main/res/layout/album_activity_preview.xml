@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/album_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_actionbar_height" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+       <com.android.king.albumpicker.view.GalleryView
+           android:id="@+id/layout_gallery"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:paddingBottom="10dp"
+           android:paddingTop="10dp"
+           android:background="@color/album_toolbar_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_toolbar_height"
+            android:background="@color/album_toolbar_color">
+
+            <CheckBox
+                android:id="@+id/rb_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="原图"
+                android:textColor="@android:color/white"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:theme="@style/MyCheckBox" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="@color/album_gray" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:text="选择"
+                android:textColor="@android:color/white"
+                android:theme="@style/MyCheckBox" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

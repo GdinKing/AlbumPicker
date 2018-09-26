@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/album_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_actionbar_height" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#393a3f">
+
+        <TextView
+            android:id="@+id/tv_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawableRight="@drawable/album_ic_indicator"
+            android:minWidth="40dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:text="@string/image_video"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/rb_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="原图"
+            android:textColor="@android:color/white"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:theme="@style/MyCheckBox" />
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/preview"
+            android:textColor="@color/album_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/actionbar"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:verticalSpacing="3dp" />
+
+    <ViewStub
+        android:id="@+id/stub_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/actionbar"
+        android:layout_centerInParent="true"
+        android:layout="@layout/album_empty_media" />
+
+</RelativeLayout>
