@@ -15,7 +15,7 @@
 
 ### 示例图
 
-![](/guide/picker.jpg)   ![](/guide/preview.jpg)
+![](/guide/picker.jpg){:height="320px" width="180px"}   ![](/guide/preview.jpg){:height="320px" width="180px"} 
 
 ### 用法
 
