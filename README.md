@@ -14,9 +14,9 @@
 - 图片裁剪、旋转
 
 ### 示例图
-
-<img src="/guide/picker.jpg" width="180" height="320" style="float:left"/>
-<img src="/guide/preview.jpg" width="180" height="320"/>
+<div>
+<img src="/guide/picker.jpg" width="180" height="320" style="float:left"/><img src="/guide/preview.jpg" width="180" height="320"/>
+</div>
 
 ### 用法
 
