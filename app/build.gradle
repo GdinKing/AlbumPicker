@@ -31,4 +31,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     implementation project(':albumpicker')
+
+//    implementation 'com.king.ui:albumpicker:1.0.0'
 }

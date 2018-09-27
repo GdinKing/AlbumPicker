@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.android.king.albumpicker.R;
 import com.android.king.albumpicker.entity.Photo;
 import com.android.king.albumpicker.entity.SelectedImage;
+import com.android.king.albumpicker.util.AlbumConstant;
 import com.android.king.albumpicker.util.ImageUtil;
 import com.android.king.albumpicker.util.MediaManager;
 import com.android.king.albumpicker.view.GalleryView;
@@ -46,6 +47,7 @@ public class PreviewActivity extends BaseActivity implements MediaManager.OnChec
 
     public static final String KEY_SELECT_INDEX = "index";
     public static final String KEY_CURRENT_DIR = "dir";
+    public static final String KEY_SELECT_TYPE = "type";
 
     private CheckBox rbOriginal;
     private AppCompatCheckBox cbSelect;
@@ -57,6 +59,7 @@ public class PreviewActivity extends BaseActivity implements MediaManager.OnChec
 
     private GalleryView galleryView;
     private int dirIndex;
+    private int selectType;
 
     @Override
     protected int getLayout() {
@@ -86,7 +89,10 @@ public class PreviewActivity extends BaseActivity implements MediaManager.OnChec
     protected void initData() {
         int index = getIntent().getIntExtra(KEY_SELECT_INDEX, 0);
         dirIndex = getIntent().getIntExtra(KEY_CURRENT_DIR, -1);
-
+        selectType = getIntent().getIntExtra(KEY_SELECT_TYPE, AlbumConstant.TYPE_ALL);
+        if (selectType == AlbumConstant.TYPE_VIDEO) {
+            rbOriginal.setVisibility(View.GONE);
+        }
         if (dirIndex == -1) {//从预览按钮点击进入
             selectPhotoList = new ArrayList<>();
             for (Integer integer : MediaManager.getInstance().getCheckPhotos().keySet()) {

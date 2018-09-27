@@ -122,6 +122,9 @@ public class AlbumPickerActivity extends BaseActivity implements View.OnClickLis
         mode = intent.getIntExtra(KEY_SELECT_MODE, AlbumConstant.MODE_MULTI);
         reqWidth = intent.getIntExtra(KEY_REQ_WIDTH, 720);
         reqHeight = intent.getIntExtra(KEY_REQ_HEIGHT, 1280);
+        if (type == AlbumConstant.TYPE_VIDEO) {
+            rbOriginal.setVisibility(View.GONE);
+        }
         MediaManager.getInstance().init();
         MediaManager.getInstance().setMaxMediaSum(maxMedia);
         if (type == AlbumConstant.TYPE_IMAGE) {
@@ -205,6 +208,7 @@ public class AlbumPickerActivity extends BaseActivity implements View.OnClickLis
 
         } else if (i1 == R.id.tv_preview) { //预览
             Intent intent = new Intent(this, PreviewActivity.class);
+            intent.putExtra(PreviewActivity.KEY_SELECT_TYPE, type);
             startActivityForResult(intent, REQUEST_PREVIEW);
 
         } else if (i1 == R.id.tv_right) {//确定
@@ -292,6 +296,7 @@ public class AlbumPickerActivity extends BaseActivity implements View.OnClickLis
             Intent intent = new Intent(this, PreviewActivity.class);
             intent.putExtra(PreviewActivity.KEY_SELECT_INDEX, position);
             intent.putExtra(PreviewActivity.KEY_CURRENT_DIR, MediaManager.getInstance().getSelectIndex());
+            intent.putExtra(PreviewActivity.KEY_SELECT_TYPE, type);
             startActivityForResult(intent, REQUEST_PREVIEW);
         }
 
