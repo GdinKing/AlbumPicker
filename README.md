@@ -71,10 +71,8 @@ public class GlideLoader implements ImageLoader {
 
 ## 更新日志
 
-2018-09-26 
+2018-09-26--v1.0.0
 
-v1.0.0
-
-- 新发布
+- 发布1.0.0版本
 
 
