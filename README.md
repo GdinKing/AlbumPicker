@@ -18,6 +18,12 @@
 <img src="/guide/picker.jpg" width="250" height="445" style="float:left"/>     <img src="/guide/preview.jpg" width="250" height="445"/>
 </div>
 
+### 引入
+
+```groovy
+   implementation 'com.king.ui:albumpicker:1.0.0'
+```
+
 ### 用法
 
 1.创建一个图片加载器类,实现com.android.king.albumpicker.util.ImageLoader接口
@@ -69,9 +75,9 @@ public class GlideLoader implements ImageLoader {
 
 如果大家在使用过程中发现bug，欢迎在[issues](https://github.com/GdinKing/AlbumPicker/issues)给我留言！
 
-## 更新日志
+### 更新日志
 
-### 2018-09-27 v1.0.0
+#### 2018-09-27 v1.0.0
 
  发布1.0.0版本
 
