@@ -67,3 +67,14 @@ public class GlideLoader implements ImageLoader {
     }
 ```
 
+如果大家在使用过程中发现bug，欢迎在[issues](https://github.com/GdinKing/AlbumPicker/issues)给我留言！
+
+## 更新日志
+
+2018-09-26 
+
+v1.0.0
+
+- 新发布
+
+
