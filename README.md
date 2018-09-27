@@ -20,7 +20,7 @@
 
 ### 用法
 
-1.创建一个图片加载器类,实现com.android.king.albumpicker.util.ImageLoader
+1.创建一个图片加载器类,实现com.android.king.albumpicker.util.ImageLoader接口
 
 ```java
 public class GlideLoader implements ImageLoader {
