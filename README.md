@@ -31,7 +31,7 @@ public class GlideLoader implements ImageLoader {
         RequestOptions options = new RequestOptions();
         options.placeholder(R.drawable.album_ic_placeholder);
         options.fitCenter();
-        Glide.with(context).asGif().load(path) //Glide
+        Glide.with(context).load(path) //Glide
                     .apply(options)
                     .into(imageView);
       
