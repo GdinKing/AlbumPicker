@@ -53,8 +53,8 @@ public class GlideLoader implements ImageLoader {
                 .setMax(max) //最大选择数
                 .setSelectType(AlbumConstant.TYPE_IMAGE) //选择类型 TYPE_ALL:图片和视频 TYPE_IMAGE:图片 TYPE_VIDEO:视频
                 .setMode(AlbumConstant.MODE_MULTI) //选择模式 MODE_MULTI：多选 MODE_SINGLE：单选
-                .setWidthLimit(1080)  //压缩宽度限定，为原图时此设置无效
-                .setHeightLimit(1920) //压缩高度限定，为原图时此设置无效
+                .setWidthLimit(1080)  //压缩宽度限定，为原图时此设置无效，默认720
+                .setHeightLimit(1920) //压缩高度限定，为原图时此设置无效，默认1280
                 .getIntent();
  startActivityForResult(intent, 100);
 ```
