@@ -9,11 +9,6 @@
 - 支持图片压缩
 - 自定义图片加载器，Glide、Picasso、ImageLoader随你喜欢
 
-### 待完善
-
-- 支持拍摄照片/视频
-- 图片裁剪、旋转
-
 ### 示例图
 <div>
 <img src="/guide/picker.jpg" width="250" height="445" style="float:left"/>     <img src="/guide/preview.jpg" width="250" height="445"/>
